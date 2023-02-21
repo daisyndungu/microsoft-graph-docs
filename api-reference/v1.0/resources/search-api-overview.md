@@ -47,6 +47,7 @@ The following table describes the types available to query and the supported per
 |[list](list.md)|Sites.Read.All, Sites.ReadWrite.All| SharePoint and OneDrive | Lists. Note that document libraries are also returned as lists. |
 |[listItem](listitem.md)|Sites.Read.All, Sites.ReadWrite.All| SharePoint and OneDrive | List items. Note that files and folders are also returned as list items; **listItem** is the super class of **driveItem**. |
 |[site](site.md)|Sites.Read.All, Sites.ReadWrite.All| SharePoint | Sites in SharePoint.|
+|[person](person.md)|People.Read|Exchange Online|Personal contacts and contacts or addressable objects in your organization.|
 
 ## Page search results
 
@@ -180,9 +181,9 @@ The search API has the following limitations:
 
 - The **contentSource** property, which defines the connection to use, is only applicable when **entityType** is specified as `externalItem`.
 
-- The search API does not support custom sort for **message**, **event** or  **externalItem**.
+- The search API does not support custom sort for **message**, **event**,  **externalItem** or **person**.
 
-- The search API does not support aggregations for **message**, **event**, **site** or **drive**.
+- The search API does not support aggregations for **message**, **event**, **site**, **drive** or **person**.
 
 - The search API does not support xrank for **message**,**chatMessage**, **event**, **person**, or **externalItem**.
 
@@ -199,6 +200,7 @@ The search API has the following limitations:
   - [Request spelling correction](/graph/search-concept-speller)
   - [Use search display layout](/graph/search-concept-display-layout)
   - [XRANK search results](/graph/search-concept-xrank)
+  - [Search person](/graph/search-concept-person)
 
 - Explore the search APIs in  [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
 - Find out about the [latest new features and updates](/graph/whats-new-overview) for this API set.
